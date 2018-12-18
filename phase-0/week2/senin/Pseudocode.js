@@ -1,5 +1,10 @@
 // Newton Second LAW:
 
+1. buat variable "newton" kosong;
+2. buat variable "massa" dengan nilai angka;
+3. buat variable "kecepatan" dengan nilai angka;
+4. lalu di dalam variable "newton" isi penjumlahan "massa" dikali dengan 'kecepatan';
+5. kemudian print nilai "newton" yang mana dari hasil penjumlahan 'massa' dikali dengan 'kecepatan';
 
 STORE "newton" without any values;
 STORE "massa" with any numbers;
