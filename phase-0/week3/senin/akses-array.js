@@ -6,4 +6,4 @@ function balikString( str ) {
   return balik;
 };
 
-console.log( balikString("Hello Wordl") );
+console.log( balikString("Hello World") );
