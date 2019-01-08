@@ -5,10 +5,10 @@ function angkaPalindrome(num) {
       return num+1;
     } else if(String(num)[0] === String(num)[String(num).length-1]) {
       return num;
-    };
+    }
     num++;
   }
-};
+}
 
  // TEST CASES
 console.log(angkaPalindrome(8)); // 9

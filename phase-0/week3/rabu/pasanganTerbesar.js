@@ -3,10 +3,10 @@ function pasanganTerbesar(num) {
   for(var i = 0 ; i < str.length ; i++){
     if(max === null || (str[i]+str[i+1]) > max){
       max = (str[i]+str[i+1]);
-    };
+    }
   }
-  return max;
-};
+  return Number(max);
+}
 
 // TEST CASES
 console.log(pasanganTerbesar(641573)); // 73

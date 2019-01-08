@@ -3,8 +3,8 @@ function palindrome(kata) {
     return false;
   } else{
     return true;
-  };
-};
+  }
+}
 
 // TEST CASES
 console.log(palindrome('katak')); // true

@@ -1,16 +1,16 @@
 function hitungJumlahKata(kalimat) {
   var tampung = "", result = [];
-  for(i of kalimat) {
+  for(var i of kalimat) {
     if(i !== " "){
       tampung += i;
     } else {
       result[result.length] = tampung;
       tampung = "";
-    };
+    }
   }
   result[result.length] = tampung;
   return result.length;
-};
+}
 
 // TEST CASES
 console.log(hitungJumlahKata('I have a dream')); // 4
