@@ -3,7 +3,6 @@ function palindrome(kata) {
     return false;
   } else{
     return true;
-    return palindrome(kata.slice(1));
   };
 };
 
