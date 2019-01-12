@@ -16,3 +16,18 @@ Jika jumlah baju kurang dari 0 atau menerima input selain angka maka tampilkan '
 */
 
 // write pseudocode/ algoritma here
+
+STORE 'item' with any values;
+STORE 'pembeli' with empty;
+
+IF 'item' less than 0 OR typeof 'item' is not equals 'numbers'
+  SET 'pembeli' equals 'Input Invalid';
+ELSE IF 'item' greater than 9
+  SET 'pembeli' equals 'item' yang kamu dapatkan adalah 'item' added 5;
+ELSE IF 'item' greater than 7
+  SET 'pembeli' equals 'item' yang kamu dapatkan adalah 'item' added 3;
+ELSE IF 'item' greater than 5
+  SET 'pembeli' equals 'item' yang kamu dapatkan adalah 'item' added 1;
+END IF
+
+DISPLAY 'pembeli'

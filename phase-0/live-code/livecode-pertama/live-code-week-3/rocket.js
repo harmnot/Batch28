@@ -17,16 +17,15 @@ output: 3
 */
 
 function treasureHunt(str) {
-  var count = 0,
-    hitung = 0;
+  var count = 0;
   var abcnum = "abcdefghijklmnopqrstuvwxyz0123456789";
   for (i of abcnum) {
     for (j of str) {
-      if (j.toLowerCase() == i) {
+      if (j.toLowerCase() === i) {
         count++;
-      };
-    };
-  };
+      }
+    }
+  }
   return str.length - count;
 };
 
