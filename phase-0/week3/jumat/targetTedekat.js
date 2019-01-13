@@ -25,7 +25,7 @@ function targetTerdekat(arr) {
           indexXkiri = a;
           break;
         } else {
-          indeXkiri = NaN;
+          indexXkiri = NaN;
           indexXkanan = NaN; // harus jadi boolean karena index X tidak ditemukan sebelah kanan
         }
       }
