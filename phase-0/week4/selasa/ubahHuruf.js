@@ -1,13 +1,15 @@
 function ubahHuruf(kata) {
-  // console.log(kata.charCodeAt(0))
-  var result = "";
-  if(kata.length === 0) {
-    return result;
-  } else if( kata.charCodeAt(0) ===  kata.charCodeAt(0)){
-    var nextAlphabet = kata.charCodeAt(0)+1;
-    result +=  String.fromCharCode(nextAlphabet);
+  let output = "";
+  let abc = "abcdefghijklmnopqrstuvwxyz";
+  for (let i = 0; i < kata.length; i++) {
+    let abjad = kata[i];
+    for (let j = 0; j < abc.length; j++) {
+      if (abjad == abc[j]) {
+        output += abc[j + 1];
+      }
+    }
   }
-  return result + ubahHuruf(kata.slice(1));
+  return output;
 }
 
 // TEST CASES

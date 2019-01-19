@@ -2,7 +2,7 @@ function highestScore (students) {
   let max = null, obj ={}
   for(i of students){
     if(!obj[i.class] || obj[i.class].score < i.score ){
-      obj[i.class] ={name: i.name, score: i.score};
+      obj[i.class] = {name: i.name, score: i.score};
     };
   };
 return obj;

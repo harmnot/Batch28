@@ -1,13 +1,17 @@
-function deepSum (arr) {
+function deepSum(arr) {
   var sum = 0;
-  for(i of arr){
-    if(Array.isArray(i)){
-      sum += deepSum(i);
-    } else {
-      sum += i;
+  if (!arr.length) {
+    return "No Number";
+  } else {
+    for (i of arr) {
+      if (Array.isArray(i)) {
+        sum += deepSum(i);
+      } else {
+        sum += i;
+      }
     }
   }
-  return !sum ? "No Number" : sum;
+  return sum;
 }
 
 //TEST CASE
