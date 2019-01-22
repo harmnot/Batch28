@@ -1,6 +1,6 @@
 function ubahHuruf(kata) {
   let output = "";
-  let abc = "abcdefghijklmnopqrstuvwxyz";
+  let abc = "abcdefghijklmnopqrstuvwxyza";
   for (let i = 0; i < kata.length; i++) {
     let abjad = kata[i];
     for (let j = 0; j < abc.length; j++) {
