@@ -1,6 +1,7 @@
 function groupAnimals(animals) {
   var obj = {};
-  var iterators = animals.keys(); // index of arrays 
+  var iterators = animals.keys(); // index of arrays
+  // console.log(iterators);
 
   for(key of iterators){
     if(!obj[animals[key][0]])
@@ -8,6 +9,7 @@ function groupAnimals(animals) {
       obj[[animals[key][0]]].push(animals[key]);
   }
   return Object.values(obj).sort();
+  // console.log(obj);
 }
 
 // TEST CASES

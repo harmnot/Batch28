@@ -17,28 +17,44 @@ return password - nya dari
 
 
 function changeVocals(str) {
-  let text = "";
-  if(str.length === 0) return text;
-  else if str[0].charCodeAt(0)
+  let [text, vocals] = ['', 'abcdefghijklmnopqrstuvwxyza'];
+  for (let i = 0; i < str.length; i++) {
+      let check = true
+    for (let j = 0; j < vocals.length-1; j++) {
+      if(str[i] == vocals[j])  {
+        check = false;
+        text += vocals[j+1]
+      }
+    }
+    if(check) {
+      text += str[i];
+    }
+  }
+  return text
 }
-
+// console.log(changeVocals('Sergei Dragunov'))
 function reverseWord(str) {
-  //code di sini
+  if(str.length === 0){
+    return ''
+  } else {
+    return reverseWord(str.slice(1)) + str[0]
+  }
 }
-
-function setLowerUpperCase(str) {
-  //code di sini
-}
-
-function removeSpaces(str) {
-  //code di sini
-}
-
-function passwordGenerator(name) {
-  //code di sini
-}
-
-console.log(passwordGenerator('Sergei Dragunov')); // 'VPNVGBRdJFGRFs'
-console.log(passwordGenerator('Dimitri Wahyudiputra')); // 'BRTVPJDVYHBwJRTJMJd'
-console.log(passwordGenerator('Alexei')); // 'JFXFLb'
-console.log(passwordGenerator('Alex')); // 'Minimal karakter yang diinputkan adalah 5 karakter'
+console.log(reverseWord('Sergei Dragunov'))
+//
+// function setLowerUpperCase(str) {
+//   //code di sini
+// }
+//
+// function removeSpaces(str) {
+//   //code di sini
+// }
+//
+// function passwordGenerator(name) {
+//   //code di sini
+// }
+//
+// console.log(passwordGenerator('Sergei Dragunov')); // 'VPNVGBRdJFGRFs'
+// console.log(passwordGenerator('Dimitri Wahyudiputra')); // 'BRTVPJDVYHBwJRTJMJd'
+// console.log(passwordGenerator('Alexei')); // 'JFXFLb'
+// console.log(passwordGenerator('Alex')); // 'Minimal karakter yang diinputkan adalah 5 karakter'

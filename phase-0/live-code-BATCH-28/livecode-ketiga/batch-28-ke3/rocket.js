@@ -40,9 +40,9 @@
 
 function pagingData(dataCount, perPage) {
 
-  let [arr, obj, temp, i, k, check] = [
+  let [arr, obj, temp, i, check] = [
     [], {},
-    [], 1, 1, true
+    [], 1, true
   ];
   while (check) {
     temp.push(i);
@@ -52,20 +52,19 @@ function pagingData(dataCount, perPage) {
     }
 
     if (i === dataCount) {
-      arr.push(temp)
-      // console.log(temp)
+      arr.push(temp);
       check = false;
     }
     i++;
   }
 
-  for (var o = 0; o < arr.length; o++) {
+  for (let o = 0; o < arr.length; o++) {
     obj["Page " + (o + 1)] = arr[o];
   }
   return obj;
 }
 
-console.log(pagingData(47, 10))
+console.log(pagingData(47, 10));
 /*
   {
       "page 1":[1,2,3,4,5,6,7,8,9,10],

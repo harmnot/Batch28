@@ -12,6 +12,7 @@ Contoh input dan output bisa dilihat di test case.
 function trainSeating(penumpang) {
   // Your code here
   var duduk = {};
+  
   for ({
       nama,
       gerbong,
@@ -29,7 +30,9 @@ function trainSeating(penumpang) {
       }
     }
   }
+
   return duduk;
+
 }
 
 

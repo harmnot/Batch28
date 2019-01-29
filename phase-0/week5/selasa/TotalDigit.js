@@ -1,8 +1,8 @@
 function totalDigitRekursif(angka) {
-  let [strAngka, sum] = [String(angka), 0]
+  let [strAngka, sum] = [String(angka), 0];
   if(strAngka.length === 0) return 0;
-  else sum += +(strAngka[0])
-  return sum + totalDigitRekursif(strAngka.slice(1))
+  else sum += +(strAngka[0]);
+  return sum + totalDigitRekursif(strAngka.slice(1));
 }
 
 // TEST CASES
