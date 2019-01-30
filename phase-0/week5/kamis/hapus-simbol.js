@@ -1,13 +1,6 @@
 function hapusSimbol(str) {
-  var rex = /[a-z\[0-9]/;
-  var tampung = "";
- if (str === ""){
-   return "";
- } else if(rex.test(str[0])){
-   return tampung += str[0] + hapusSimbol(str.substr(1));
- } else {
-   return tampung += hapusSimbol(str.substr(1));
- };
+  var newStr = str.replace(/[^a-z0-9]+/gi, '');
+  return newStr;
 };
 
 // TEST CASES
